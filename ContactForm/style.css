@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact{
+    background-color: rgb(238,203,237);
+    display: flex;
+    justify-content: center;
+}
+
+.contact form{
+    height: 100vh;
+    width: 50%;
+    border: 2px solid white;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    flex-direction: column;
+}
+
+form h2{
+    text-align: center;
+    font-weight: 400;
+    color:rgb(230, 91, 0);
+    margin-bottom: 20px;
+}
+
+form input,textarea{
+    background: rgb(245, 245, 245);
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    margin: 10px 0px;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+}
+
+form button{
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 50px;
+    background: transparent;
+    color: rgb(230, 91, 0);
+    border: 2px solid rgb(230, 91, 0);
+    cursor: pointer;
+    transition: all 1s ease-in;
+    font-size: 16px;
+}
+
+form button:hover{
+    background-color:rgb(230, 91, 0);
+    color: white;
+}

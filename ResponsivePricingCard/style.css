@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.pricingcards{
+    background: rgb(153,50,204);
+    height: 100vh;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.pricingcards h1{
+    text-align: center;
+    font-weight: 400;
+    color: white;
+    font-size: 45px;
+}
+
+.pricingcards .cards{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.pricingcards .cards .card{
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 70px 25px 70px;
+    background: white;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .2s all linear;
+    font-size: 20px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.pricingcards .cards .card:hover{
+    background-color: skyblue;
+    transform: scale(1.01);
+    box-shadow: 0 1rem 1rem 0rem #753a93;
+}
+
+.pricingcards .cards .card h2{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 0px 0px 25px 25px;
+    text-align: center;
+    background-color: skyblue;
+    
+}
+
+
+.pricingcards .cards .card p{
+    color: skyblue;
+    padding: 20px 0px;
+    font-size: 25px;
+}
+
+.pricingcards .cards .card:hover p{
+    color: black;
+}
+
+.pricingcards .cards .card ul li{
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+.pricingcards .cards .card button{
+    padding: 10px 15px;
+    background: transparent;
+    border: 2px solid skyblue;
+    border-radius: 25px;
+    margin-top: 30px;
+    color: skyblue;
+}
+
+.pricingcards .cards .card:hover button{
+    border: 2px solid white;
+    color: white;
+}
