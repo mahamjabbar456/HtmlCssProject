@@ -7,15 +7,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <div class="form">
-            <h1>Login</h1>
-            <form action="action.php">
-                <input type="text" name="firstname" id="fname" placeholder="Enter your name">
-                <input type="password" name="password" id="password" placeholder="Enter your password">
-                <button class="Submit">Submit</button>
-            </form>
+    <div class="loginform">
+        <h1>Login</h1>
+        <div class="inputdata">
+            <label for="username">Username</label>
+            <div class="imageandinput">      
+                <img src="user.svg" alt=""><input type="text" id="username" placeholder="Type your username">
+            </div>
+            <label for="password">Password</label>
+            <div class="imageandinput">
+                <img src="password.svg" alt=""><input type="password" placeholder="Type your password">
+            </div>
+            <a href="">Forget password?</a>
         </div>
-    </main>
+        <button class="loginbutton">Login</button>
+        <span>Or Sign Up using</span>
+        <div class="socialmedia">
+            <a href="">
+                <img class="facebook" src="facebook.svg" alt="">
+            </a>
+            <a href="">
+                <img class="twitter" src="twitter.svg" alt="">
+            </a>
+            <a href="">        
+                <img class="google" src="google.svg" alt="">
+            </a>
+        </div>
+        <span>Or Sign Up using</span>
+        <button class="sign">SIGN UP</button>
+    </div>
 </body>
 </html>
