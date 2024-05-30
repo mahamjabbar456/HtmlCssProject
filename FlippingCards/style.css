@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    /* display: flex; */
+    width: 22rem;
+    height: 200px;
+    position: relative;
+    /* justify-content: center; */
+    /* align-items: center; */
+    transform-style: preserve-3d;
+    margin: 1rem;
+    transition: all .4s linear;
+    /* border-radius: 1rem; */
+    color: white;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+/* Hum logo front and back card to same class deka uski height,width,display,position,border-radius,text-aligin,padding same rakha skate hai */
+
+.card .cards{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin:top right,left bottom */
+    padding: 5px 15px 15px;
+    backface-visibility: hidden;
+}
+
+.card .front-card{
+    /* position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem; */
+    background-image: linear-gradient(to right top, rgb(228, 4, 4), rgb(166, 0, 212));
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    backface-visibility: hidden; */
+}
+
+.card .back-card{
+    /* position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem; */
+    background-color: red;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; */
+    transform: rotateY(180deg);
+    /* padding: 5px; */
+    /* backface-visibility: hidden; */
+}
+
+.front-card img{
+    width: 15%;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+}
+
+.front-card h1{
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.front-card p{
+    font-size: .9rem;
+}
+
+.back-card h2{
+    margin-bottom: .5rem;
+}
+
+.back-card a{
+    text-decoration: none;
+    color: white;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+}

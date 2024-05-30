@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(34, 232, 254);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration-form{
+    margin: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.registration-form h1{
+    font-size: 25px;
+    position: relative;
+}
+
+.registration-form h1::after{
+    position: absolute;
+    content: "";
+    width: 129px;
+    height: 3px;
+    background-color: rgb(230, 91, 0);
+    left: 0;
+    top: 2.3rem;
+}
+
+.personal-detail h3{
+    padding-top: .8rem;
+    font-size: 17px;
+}
+
+.listthreeitems{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.listthreeitems .labelandinput{
+    display: flex;
+    flex-direction: column;
+    margin: .5rem 1rem;
+}
+
+.listthreeitems .labelandinput label{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.listthreeitems .labelandinput input{
+    font-size: 12px;
+    padding: .1rem;
+    outline: none;
+    background: transparent;
+    border: 1px solid rgb(113, 101, 101);
+    border-radius: .2rem;
+}
+
+.labelandinput #DOB{
+    width: 154px;
+}
+
+hr{
+    margin: 1rem 0rem;
+    width: 68%;
+}
+
+.other-detail h3{
+    font-size: 17px;
+}
+
+.btn{
+    background-color: rgb(230, 91, 0);
+    width: 50%;
+    margin: .5rem auto;
+    padding: 5px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    display: block;
+    transition: all .4s linear;
+}
+
+.btn:hover{
+    background-color: white;
+    color: rgb(230, 91, 0);
+    transform: scale(1.1);
+}

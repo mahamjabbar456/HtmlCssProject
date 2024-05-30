@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.maincontainer{
+    width: 100%;
+    height: 100vh;
+    background-color: purple;
+}
+
+.maincontainer .leftmenu{
+    position: relative;
+    height: 100vh;
+    width: 4.5rem;
+    background-color: white;
+    transition: all .4s linear;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftmenu:hover{
+    width: 13rem;
+}
+
+.leftmenu .logo{
+    width: 80px;
+    position: relative;
+    top: 1rem;
+    left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 0 0px;
+}
+
+.logo img{
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+}
+
+/* Hum jo sara kam anchor tag par kar rhe hai wo hum span par bhi kar skate hai uski position relative honi chahiya ku ka hum left sa space deni hai */
+.leftmenu span{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+    /* margin-left: 20px; */
+    position: relative;
+    left: 95px;
+    width: 300px;
+    color: #7410f0;
+    display: table;
+    text-align: left;
+}
+
+
+/* .leftmenu .logo a{
+   position: relative;
+   left: 180px;
+   width: 300px;
+   color: #7410f0;
+   display: table;
+   text-align: left;
+   text-decoration: none;
+   padding: 10px;
+} */
+
+.maincontainer .leftmenu ul{
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.maincontainer .leftmenu ul li{
+    align-items: center;
+    list-style: none;
+    margin-bottom: 1rem;
+    transition: all .3s linear;
+}
+
+.maincontainer .leftmenu ul li a{
+    color: #7410f0;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: flex;
+}
+
+.maincontainer .leftmenu ul li a i{
+    text-decoration: none;
+    color: #7410f0;
+    font-size: 1.5rem;
+    transition: all .3s linear;
+    cursor: pointer;
+    margin-right: 1.2rem;
+}
+
+ul i{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+#setting{
+    position: absolute;
+    bottom: 1rem;
+}
+
+.leftmenu ul li:hover{
+    transform: translateX(.4rem);
+    transition: all .3s linear;
+}
+
+.leftmenu ul li:hover .fa-solid,
+.leftmenu ul li:hover a{
+    color: purple;
+    font-weight: bold;
+}
